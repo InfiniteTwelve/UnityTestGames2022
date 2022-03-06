@@ -134,6 +134,9 @@ GameObject:
   - component: {fileID: 406578651}
   - component: {fileID: 406578650}
   - component: {fileID: 406578649}
+  - component: {fileID: 406578653}
+  - component: {fileID: 406578652}
+  - component: {fileID: 406578654}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -218,6 +221,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &406578652
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406578648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.5}
+    newSize: {x: 1, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.009597857, y: 0.24911273}
+      - {x: -0.4988525, y: 0.0061153173}
+      - {x: -0.4965576, y: -0.005297661}
+      - {x: -0.008273795, y: -0.25}
+      - {x: 0.011095516, y: -0.2507385}
+      - {x: 0.49826756, y: -0.0057115555}
+      - {x: 0.5011827, y: 0.0060124397}
+      - {x: 0.0125258025, y: 0.24908662}
+--- !u!114 &406578653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406578648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ed19350af074941abf3af683ab4e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 2.5
+  playerRigi: {fileID: 406578654}
+--- !u!50 &406578654
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406578648}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
